@@ -1,0 +1,18 @@
+{
+  "name": "Override New Tab",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Get an image with a daily quote whenever you open a new tab.",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "icons": {
+  "16": "icons/icon16.png",
+  "48": "icons/icon48.png",
+  "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "chrome_url_overrides": {
+  "newtab": "src/override/override.html"
+  },
+  "permissions": [ "https://source.unsplash.com/","http://quotes.rest/"]
+  }
+  
